@@ -1,0 +1,60 @@
+<!-- Login page -->
+<div class="login-page">
+ 
+  <!-- THE FORM'S CODE WILL BE HERE -->
+
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+            <!-- <img src="../assets/images/Nurse_Blue_02.jpg" alt="" id="loginImge"> -->
+          </div>
+          <div class="col-sm-2">
+
+          </div>
+          <div class="col-sm-4 offset-sm-3 login-box wow fadeInUp">
+
+              <div class="l-form-top">
+                  <div class="l-form-top-left">
+                     <!-- <img src="../assets/images/cca.jpg" alt="" id="loginLogo"> -->
+                  </div>
+                  <div class="l-form-top-right">
+                      <i class="fa fa-lock"></i>
+                  </div>
+              </div>
+              <div class="l-form-bottom">
+                  <form role="form" action="" #hmsloginForm="ngForm">
+                      <div class="form-group">
+                          <label for="l-form-username">Username</label>
+                          <input #username="ngModel" name="username" ngModel type="text" placeholder="Username..." class="l-form-username form-control" id="l-form-username">
+                      </div>
+                      <div class="form-group">
+                          <label  for="l-form-password">Password</label>
+                          <input  #password="ngModel" name="password" ngModel type="password" placeholder="Password..." class="l-form-password form-control" id="l-form-password">
+                      </div>
+                      <button type="button" (click)="login(hmsloginForm)" class="btn">Sign in!</button>
+                      <div class="checkbox">
+                          <input type="checkbox" id="remember-me" class="styled">
+                          <label for="remember-me">Remember me</label>
+                      </div>
+                  </form>
+                  <!-- <form action="">
+                        <div class="form-group">
+                            <label for="username-email">Username</label>
+                            <input value='' id="username-email" placeholder="Username" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" value='' placeholder="Password" type="text" class="form-control" />
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" class="btn btn-success btn-login-submit" value="Login" />
+                        </div>
+                    </form> -->
+              </div>
+
+          </div>
+      </div>
+      
+  </div>
+
+</div>
